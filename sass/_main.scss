@@ -15,7 +15,46 @@ body {
   // background: yellow;
 }
 header{
-  display: flex; 
-  flex-direction: row;
+  background: #fff;
+  color: grey;
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
+  .left-side{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      border-right: 1px solid grey;
+    }
+    .top-nav{
+      ul{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+
+        li{
+          cursor: pointer;
+          padding: 20px;
+          a{
+
+          }
+        }
+      }
+    }
+    #top-search{
+      background: grey;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+    }
+  }
 }
