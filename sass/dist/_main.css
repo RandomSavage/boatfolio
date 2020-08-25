@@ -176,6 +176,16 @@ header .left-side .top-nav ul {
 header .left-side .top-nav ul li {
   cursor: pointer;
   padding: 20px;
+  text-decoration: none;
+}
+header .left-side .top-nav ul li a {
+  text-decoration: none;
+  color: grey;
+}
+header .left-side .top-nav ul li .lnr-chevron-down {
+  color: grey;
+  font-size: 1rem;
+  margin-left: 10px;
 }
 header .left-side #top-search {
   background: grey;
