@@ -1,0 +1,21 @@
+@import "_reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Y138Sy7AZXM7-pYhD6qhGAHaFJ%26pid%3DApi&f=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+  // background: yellow;
+}
+header{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
