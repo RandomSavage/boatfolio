@@ -168,22 +168,22 @@ header .left-side .logo {
   width: 150px;
   border-right: 1px solid grey;
 }
-header .left-side .top-nav ul {
+header .left-side .top-nav .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: relative;
 }
-header .left-side .top-nav ul li {
+header .left-side .top-nav .nav-container div {
   cursor: pointer;
   padding: 20px;
   text-decoration: none;
 }
-header .left-side .top-nav ul li a {
+header .left-side .top-nav .nav-container div a {
   text-decoration: none;
   color: grey;
 }
-header .left-side .top-nav ul li .lnr-chevron-down {
+header .left-side .top-nav .nav-container div .lnr-chevron-down {
   color: grey;
   font-size: 1rem;
   margin-left: 10px;

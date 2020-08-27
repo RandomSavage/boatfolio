@@ -34,12 +34,12 @@ header{
       border-right: 1px solid grey;
     }
     .top-nav{
-      ul{
+      .nav-container{
         display: flex; 
         flex-direction: row;
         justify-content: space-between;
         position: relative;
-        li{
+        div{
           cursor: pointer;
           padding: 20px;
           text-decoration: none;
