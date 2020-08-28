@@ -178,6 +178,10 @@ header .left-side .top-nav .nav-container div {
   cursor: pointer;
   padding: 20px;
   text-decoration: none;
+  position: relative;
+}
+header .left-side .top-nav .nav-container div:hover .dropdown-content {
+  display: flex;
 }
 header .left-side .top-nav .nav-container div a {
   text-decoration: none;
@@ -187,6 +191,47 @@ header .left-side .top-nav .nav-container div .lnr-chevron-down {
   color: grey;
   font-size: 1rem;
   margin-left: 10px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  width: calc(100vh + 300px);
+  height: 350px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content .content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .left-side .top-nav .nav-container div .dropdown-content .content-container .image-container {
+  width: 200px;
+  height: 200px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content .content-container .image-container .img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Y138Sy7AZXM7-pYhD6qhGAHaFJ%26pid%3DApi&f=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+header .left-side .top-nav .nav-container div .dropdown-content .content-container .info h4 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  line-height: 1.2;
+}
+header .left-side .top-nav .nav-container div .dropdown-content .content-container .info p {
+  line-height: 1.5;
+}
+header .left-side .top-nav .nav-container div .dropdown-content .content-container .info .button {
+  background: springgreen;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
 }
 header .left-side .search {
   display: flex;
