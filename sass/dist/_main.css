@@ -150,7 +150,7 @@ body {
 header {
   background: #fff;
   color: grey;
-  padding: 20px;
+  padding: 12px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -166,7 +166,9 @@ header .left-side .logo {
   align-items: center;
   justify-content: center;
   width: 150px;
-  border-right: 1px solid grey;
+}
+header .left-side .top-nav {
+  border-left: 1px solid grey;
 }
 header .left-side .top-nav .nav-container {
   display: flex;
@@ -176,11 +178,18 @@ header .left-side .top-nav .nav-container {
 }
 header .left-side .top-nav .nav-container div {
   cursor: pointer;
-  padding: 20px;
+  padding: 12px 20px;
   text-decoration: none;
   position: relative;
 }
 header .left-side .top-nav .nav-container div:hover .dropdown-content {
+  display: flex;
+}
+header .left-side .top-nav .nav-container div:hover .dropdown-content2 {
+  display: flex;
+  background: yellow;
+}
+header .left-side .top-nav .nav-container div:hover .dropdown-content3 {
   display: flex;
 }
 header .left-side .top-nav .nav-container div a {
@@ -193,18 +202,22 @@ header .left-side .top-nav .nav-container div .lnr-chevron-down {
   margin-left: 10px;
 }
 header .left-side .top-nav .nav-container div .dropdown-content {
+  margin-top: 35px;
   display: none;
   position: absolute;
+  left: 0px;
   z-index: 1;
-  background: #fff;
-  width: calc(100vh + 300px);
+  background: #797676;
+  width: 1000px;
   height: 350px;
 }
 header .left-side .top-nav .nav-container div .dropdown-content .content-container {
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 header .left-side .top-nav .nav-container div .dropdown-content .content-container .image-container {
   width: 200px;
@@ -227,6 +240,96 @@ header .left-side .top-nav .nav-container div .dropdown-content .content-contain
   line-height: 1.5;
 }
 header .left-side .top-nav .nav-container div .dropdown-content .content-container .info .button {
+  background: springgreen;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content2 {
+  margin-top: 35px;
+  display: none;
+  position: absolute;
+  left: -113px;
+  z-index: 1;
+  background: #797676;
+  width: 1000px;
+  height: 350px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content2 .content-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .left-side .top-nav .nav-container div .dropdown-content2 .content-container .image-container {
+  width: 200px;
+  height: 200px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content2 .content-container .image-container .img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Y138Sy7AZXM7-pYhD6qhGAHaFJ%26pid%3DApi&f=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+header .left-side .top-nav .nav-container div .dropdown-content2 .content-container .info h4 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  line-height: 1.2;
+}
+header .left-side .top-nav .nav-container div .dropdown-content2 .content-container .info p {
+  line-height: 1.5;
+}
+header .left-side .top-nav .nav-container div .dropdown-content2 .content-container .info .button {
+  background: springgreen;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content3 {
+  margin-top: 35px;
+  display: none;
+  position: absolute;
+  left: -280px;
+  z-index: 1;
+  background: #797676;
+  width: 1000px;
+  height: 350px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content3 .content-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header .left-side .top-nav .nav-container div .dropdown-content3 .content-container .image-container {
+  width: 200px;
+  height: 200px;
+}
+header .left-side .top-nav .nav-container div .dropdown-content3 .content-container .image-container .img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Y138Sy7AZXM7-pYhD6qhGAHaFJ%26pid%3DApi&f=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+header .left-side .top-nav .nav-container div .dropdown-content3 .content-container .info h4 {
+  font-size: 1.8rem;
+  text-decoration: underline;
+  line-height: 1.2;
+}
+header .left-side .top-nav .nav-container div .dropdown-content3 .content-container .info p {
+  line-height: 1.5;
+}
+header .left-side .top-nav .nav-container div .dropdown-content3 .content-container .info .button {
   background: springgreen;
   padding: 5px 10px;
   border-radius: 5px;
