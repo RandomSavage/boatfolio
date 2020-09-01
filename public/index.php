@@ -1,5 +1,6 @@
 <?php>
   require('./includes/topScripts.php');
+  require('./includes/autoloader.php');
 <?>
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@
     <header>
       <div class="left-side">
         <div class="logo">
-        <a href="/">LOGO</a>
+        <a href="/" class="<?php echo ($location == '/') ? 'active' : ''; ?>">LOGO</a>
         </div>
         <nav class="top-nav">
           <div class="nav-container">
