@@ -1,5 +1,6 @@
 import {gsap} from '/../node_modules/gsap/all.js';
 
+
 let tl = gsap.timeline();
 
 let msg = document.querySelector('.marquee-msg');
