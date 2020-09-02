@@ -207,7 +207,7 @@ header .left-side .top-nav .nav-container div .dropdown-content {
   position: absolute;
   left: 0px;
   z-index: 1;
-  background: #797676;
+  background: #fff;
   width: calc(100vw - 150px);
   height: 350px;
 }
@@ -219,7 +219,6 @@ header .left-side .top-nav .nav-container div .dropdown-content .content-contain
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  overflow: hidden;
 }
 header .left-side .top-nav .nav-container div .dropdown-content .content-container .image-container {
   width: 200px;
@@ -247,6 +246,7 @@ header .left-side .top-nav .nav-container div .dropdown-content .content-contain
   border-radius: 5px;
   text-align: center;
   margin-top: 20px;
+  width: 150px;
 }
 header .left-side .top-nav .nav-container div .dropdown-content2 {
   margin-top: 35px;
@@ -293,6 +293,7 @@ header .left-side .top-nav .nav-container div .dropdown-content2 .content-contai
   border-radius: 5px;
   text-align: center;
   margin-top: 20px;
+  width: 150px;
 }
 header .left-side .top-nav .nav-container div .dropdown-content3 {
   margin-top: 35px;
@@ -300,7 +301,7 @@ header .left-side .top-nav .nav-container div .dropdown-content3 {
   position: absolute;
   left: -280px;
   z-index: 1;
-  background: #797676;
+  background: #fff;
   width: calc(100vw - 150px);
   height: 350px;
 }
@@ -339,6 +340,7 @@ header .left-side .top-nav .nav-container div .dropdown-content3 .content-contai
   border-radius: 5px;
   text-align: center;
   margin-top: 20px;
+  width: 150px;
 }
 header .left-side .search {
   display: flex;
