@@ -426,44 +426,83 @@ header .right-side .store-icons ul li a {
 
 .box-container {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 139px);
   position: relative;
   overflow: hidden;
-  border: 0.2rem dotted grey;
   background: grey;
 }
 .box-container .box {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 139px);
   display: grid;
+  grid-template-columns: 1fr 2fr;
   place-items: center;
   background: mediumturquoise;
   color: #fff;
 }
-.box-container .box:nth-child(1) {
-  position: absolute;
+.box-container .box .advert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #2e2c2c;
   width: 100%;
   height: 100%;
-  display: grid;
-  place-items: center;
-  background: mediumturquoise;
-  text-decoration: underline;
+  text-align: center;
 }
-.box-container .box:nth-child(2) {
-  background-color: mediumseagreen;
+.box-container .box .advert h1 {
+  color: yellow;
+  font-size: 7rem;
+  font-weight: 900;
 }
-.box-container .box:nth-child(3) {
-  background-color: royalblue;
+.box-container .box .advert h2 {
+  color: #2e2c2c;
+  font-size: 3rem;
+  font-weight: 900;
+  background: yellow;
+  padding: 20px;
 }
-.box-container .box:nth-child(4) {
-  background-color: mediumorchid;
+.box-container .box .advert p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+.box-container .box .advert .button {
+  background: yellow;
+  color: #2e2c2c;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  width: 240px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 18px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.box-container .box .img-container {
+  height: calc(100vh - 139px);
+  width: 100%;
+}
+.box-container .box .img-container .slide-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://www.w3jar.com/wp-content/uploads/2019/07/react-js-php-crud-app.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box-container .box .img-container .next {
+  background: url("https://d3sconocidos.com/wp-content/uploads/2019/05/php-laravel-mysql-sample.png");
 }
 
 .footer-v1 {
   background: rgba(26, 24, 24, 0.7);
   margin: 0;
   height: 400px;
+}
+.footer-v1 .footer-container {
+  padding: 50px;
 }
 .footer-v1 .footer-v1-content {
   display: grid;

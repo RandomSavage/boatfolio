@@ -1,7 +1,7 @@
-<?php>
+<?php
   require('./includes/topScripts.php');
   require('./includes/autoloader.php');
-<?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
