@@ -1,15 +1,19 @@
 "use strict";
 
 var colors = [1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-var hex = "#";
+var btn = document.getElementById('btn');
+var color = document.querySelector('.color');
 btn.addEventListener('click', function () {
-  colors[randomNumber];
+  var hexColor = "#"; // let randomNumber = getRandomNumber(); if you put this here first all numbers below will be same because this only calls once in here
 
-  for (var i = 0; i < colors.length; i++) {
-    hex += colors[randomNumber];
+  for (var i = 0; i < 6; i++) {
+    hexColor += colors[getRandomNumber()];
   }
 
-  var randomColor = getRandomColor();
-  document.body.style.backgroundColor = randomColor;
-  color.textContent = randomColor;
+  document.body.style.backgroundColor = hexColor;
+  color.textContent = hexColor;
 });
+
+var getRandomNumber = function getRandomNumber() {
+  return Math.floor(Math.random() * colors.length);
+};
