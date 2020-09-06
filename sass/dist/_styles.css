@@ -135,7 +135,46 @@ table {
 
 .nav-center {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
+  padding: 20px;
+  background: #1b1b1b;
+}
+.nav-center h4 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-center ul {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.nav-center ul li {
+  padding: 0 20px;
+}
+.nav-center ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.nav-center ul li a:hover {
+  color: #944f79;
+}
+
+main .container {
+  text-align: center;
+  margin: 100px auto;
+}
+main .container h2 {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+main .container h2 .color {
+  font-weight: 700;
+}
+main .container .btn {
   padding: 20px;
 }
